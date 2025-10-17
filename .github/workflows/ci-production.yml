@@ -7,6 +7,11 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    environment: production
+
+    POSTGRES_USER: ${{ secrets.PRODUCTION_POSTGRES_USER }}
+    POSTGRES_PASSWORD: ${{ secrets.PRODUCTION_POSTGRES_PASSWORD }}
+    POSTGRES_DB: ${{ secrets.PRODUCTION_POSTGRES_DB }}
 
     steps:
       - name: Checkout code

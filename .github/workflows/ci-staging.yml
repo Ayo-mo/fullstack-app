@@ -7,7 +7,13 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    enironmentt: staging
 
+    env:
+      POSTGRES_USER: ${{ secrets.STAGING_POSTGRES_USER }}
+      POSTGRES_PASSWORD: ${{ secrets.STAGING_POSTGRES_PASSWORD }}
+      POSTGRES_DB: ${{ secrets.STAGING_POSTGRES_DB }}
+     
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
