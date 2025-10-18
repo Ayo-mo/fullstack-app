@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
-    POSTGRES_USER: ${{ secrets.PRODUCTION_POSTGRES_USER }}
-    POSTGRES_PASSWORD: ${{ secrets.PRODUCTION_POSTGRES_PASSWORD }}
-    POSTGRES_DB: ${{ secrets.PRODUCTION_POSTGRES_DB }}
+    env:
+      POSTGRES_USER: ${{ secrets.PRODUCTION_POSTGRES_USER }}
+      POSTGRES_PASSWORD: ${{ secrets.PRODUCTION_POSTGRES_PASSWORD }}
+      POSTGRES_DB: ${{ secrets.PRODUCTION_POSTGRES_DB }}
 
     steps:
       - name: Checkout code
@@ -28,6 +29,6 @@ jobs:
 
       - name: Build and push production image
         run: |
-          docker-compose -f docker-compose.yml build
-          docker tag fullstack-app_backend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:latest
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:latest
+          docker compose -f docker-compose.yml build backend
+          docker tag fullstack-app_backend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:production
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:production

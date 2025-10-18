@@ -7,13 +7,13 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    enironmentt: staging
+    environment: staging
 
     env:
       POSTGRES_USER: ${{ secrets.STAGING_POSTGRES_USER }}
       POSTGRES_PASSWORD: ${{ secrets.STAGING_POSTGRES_PASSWORD }}
       POSTGRES_DB: ${{ secrets.STAGING_POSTGRES_DB }}
-     
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,6 +29,6 @@ jobs:
 
       - name: Build and push staging image
         run: |
-          docker-compose -f docker-compose.yml build
+          docker compose -f docker-compose.yml build backend
           docker tag fullstack-app_backend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:staging
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:staging
