@@ -15,6 +15,7 @@ services:
 
   backend:
     build: ./backend
+    image: fullstack-app_backend 
     container_name: flask_backend
     env_file:
       - ./backend/.env
@@ -27,6 +28,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: fullstack-app_frontend 
     container_name: nginx_frontend
     ports:
       - "${NGINX_PORT}:80"

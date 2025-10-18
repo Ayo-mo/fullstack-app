@@ -27,8 +27,17 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push staging image
+      - name: Build and push backend image
         run: |
           docker compose -f docker-compose.yml build backend
-          docker tag fullstack-app_backend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:staging
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-app:staging
+          docker tag fullstack-app_backend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-backend:staging
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-backend:staging
+      
+      - name: Build and push frontend image
+        run: |
+          docker compose -f docker-compose.yml build frontend
+          docker tag fullstack-app_frontend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-frontend:staging
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-frontend:staging
+          
+
+      
