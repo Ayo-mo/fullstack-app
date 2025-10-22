@@ -51,6 +51,7 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-frontend:staging
             cd /home/ayodeji889/fullstack-app
             docker-compose down
+            docker-compose pull
             docker-compose up -d --force-recreate    
           
 
