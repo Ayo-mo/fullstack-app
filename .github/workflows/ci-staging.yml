@@ -38,6 +38,20 @@ jobs:
           docker compose -f docker-compose.yml build frontend
           docker tag fullstack-app_frontend:latest ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-frontend:staging
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-frontend:staging
+
+      - name: Deploy to Staging Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.STAGING_SERVER_IP }}
+          username: ${{ secrets.STAGING_SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-backend:staging
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/fullstack-frontend:staging
+            cd /home/ayodeji889/fullstack-app
+            docker-compose down
+            docker-compose up -d --force-recreate    
           
 
       
