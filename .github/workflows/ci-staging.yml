@@ -42,8 +42,8 @@ jobs:
       - name: Deploy to Staging Server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.STAGING_SERVER_IP }}
-          username: ${{ secrets.STAGING_SSH_USER }}
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
