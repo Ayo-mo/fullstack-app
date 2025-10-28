@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ArchTech Solutions | Case Studies & Success Stories</title>
+    <meta name="description" content="Explore our portfolio of successful software architecture projects, case studies, and client success stories across various industries.">
+    <meta name="keywords" content="portfolio, case studies, software architecture projects, client success stories, ArchTech solutions">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cube"></i> ArchTech Solutions
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p>Discover how we've helped businesses transform their software architecture and achieve remarkable results through innovative solutions and expert implementation.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Start Your Project
+                    </a>
+                    <a href="#case-studies" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-arrow-down"></i> View Case Studies
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="grid grid-cols-4">
+                <div class="text-center">
+                    <h2 class="text-primary">200+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-primary">50+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-primary">99.9%</h2>
+                    <p>System Uptime</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-primary">15</h2>
+                    <p>Industries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section id="case-studies" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Case Studies</h2>
+                <p class="section-subtitle">Real-world examples of our software architecture expertise in action</p>
+            </div>
+
+            <!-- Case Study 1 -->
+            <div class="card mb-6">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-shopping-cart text-primary"></i> E-Commerce Platform Migration
+                            </h3>
+                            <p class="text-primary font-semibold">TechCorp Retail Solutions</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-4">Transformed a monolithic e-commerce platform into a scalable microservices architecture, resulting in 300% performance improvement and 99.9% uptime.</p>
+                            
+                            <h4>Challenge:</h4>
+                            <ul class="mb-4">
+                                <li>Legacy monolithic system struggling with traffic spikes</li>
+                                <li>Slow deployment cycles (weeks to months)</li>
+                                <li>Difficult to scale individual components</li>
+                                <li>High maintenance costs</li>
+                            </ul>
+
+                            <h4>Solution:</h4>
+                            <ul class="mb-4">
+                                <li>Designed microservices architecture with 15+ services</li>
+                                <li>Implemented event-driven communication</li>
+                                <li>Containerized with Docker and Kubernetes</li>
+                                <li>Set up CI/CD pipelines for automated deployment</li>
+                            </ul>
+
+                            <h4>Results:</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="text-success">300%</h5>
+                                    <p>Performance Improvement</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">99.9%</h5>
+                                    <p>System Uptime</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">80%</h5>
+                                    <p>Reduction in Deployment Time</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">60%</h5>
+                                    <p>Cost Savings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-chart-line fa-4x text-primary mb-4"></i>
+                                <h4>Technology Stack</h4>
+                                <ul class="text-left">
+                                    <li><i class="fab fa-node-js"></i> Node.js & Express</li>
+                                    <li><i class="fab fa-react"></i> React Frontend</li>
+                                    <li><i class="fas fa-database"></i> PostgreSQL & Redis</li>
+                                    <li><i class="fab fa-docker"></i> Docker & Kubernetes</li>
+                                    <li><i class="fab fa-aws"></i> AWS Cloud Services</li>
+                                    <li><i class="fas fa-tools"></i> Github Actions CI/CD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="card mb-6">
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-hospital fa-4x text-primary mb-4"></i>
+                                <h4>Healthcare System</h4>
+                                <ul class="text-left">
+                                    <li><i class="fas fa-shield-alt"></i> HIPAA Compliance</li>
+                                    <li><i class="fas fa-cloud"></i> Azure Cloud</li>
+                                    <li><i class="fas fa-database"></i> SQL Server</li>
+                                    <li><i class="fab fa-microsoft"></i> .NET Core</li>
+                                    <li><i class="fas fa-mobile-alt"></i> Mobile App</li>
+                                    <li><i class="fas fa-lock"></i> End-to-End Encryption</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-hospital text-primary"></i> Healthcare Management System
+                            </h3>
+                            <p class="text-primary font-semibold">MedTech Solutions</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-4">Built a comprehensive healthcare management system with HIPAA compliance, serving 50+ medical facilities and 100,000+ patients.</p>
+                            
+                            <h4>Challenge:</h4>
+                            <ul class="mb-4">
+                                <li>Need for HIPAA-compliant patient data management</li>
+                                <li>Integration with multiple medical devices</li>
+                                <li>Real-time data synchronization across facilities</li>
+                                <li>Mobile access for healthcare providers</li>
+                            </ul>
+
+                            <h4>Solution:</h4>
+                            <ul class="mb-4">
+                                <li>Designed secure, HIPAA-compliant architecture</li>
+                                <li>Implemented microservices for scalability</li>
+                                <li>Built real-time data synchronization</li>
+                                <li>Developed mobile applications for providers</li>
+                            </ul>
+
+                            <h4>Results:</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="text-success">100%</h5>
+                                    <p>HIPAA Compliance</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">50+</h5>
+                                    <p>Medical Facilities</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">100K+</h5>
+                                    <p>Patients Served</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">24/7</h5>
+                                    <p>System Availability</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="card mb-6">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-chart-bar text-primary"></i> Financial Analytics Platform
+                            </h3>
+                            <p class="text-primary font-semibold">FinTech Innovations</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-4">Developed a real-time financial analytics platform processing millions of transactions daily with sub-second response times.</p>
+                            
+                            <h4>Challenge:</h4>
+                            <ul class="mb-4">
+                                <li>Processing millions of financial transactions daily</li>
+                                <li>Real-time analytics and reporting requirements</li>
+                                <li>Strict security and compliance requirements</li>
+                                <li>Need for horizontal scalability</li>
+                            </ul>
+
+                            <h4>Solution:</h4>
+                            <ul class="mb-4">
+                                <li>Implemented event-driven architecture</li>
+                                <li>Used Apache Kafka for real-time data streaming</li>
+                                <li>Built distributed caching with Redis</li>
+                                <li>Implemented automated scaling policies</li>
+                            </ul>
+
+                            <h4>Results:</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="text-success">10M+</h5>
+                                    <p>Transactions/Day</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">&lt;100ms</h5>
+                                    <p>Response Time</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">99.99%</h5>
+                                    <p>Data Accuracy</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-success">Auto</h5>
+                                    <p>Scaling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-chart-bar fa-4x text-primary mb-4"></i>
+                                <h4>Technology Stack</h4>
+                                <ul class="text-left">
+                                    <li><i class="fab fa-python"></i> Python & FastAPI</li>
+                                    <li><i class="fas fa-database"></i> PostgreSQL & TimescaleDB</li>
+                                    <li><i class="fas fa-memory"></i> Redis Cache</li>
+                                    <li><i class="fas fa-stream"></i> Apache Kafka</li>
+                                    <li><i class="fab fa-aws"></i> AWS EKS</li>
+                                    <li><i class="fas fa-chart-line"></i> Grafana Monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Expertise -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Industries We Serve</h2>
+                <p class="section-subtitle">Proven expertise across diverse industries and business domains</p>
+            </div>
+
+            <div class="grid grid-cols-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                        <h4>E-Commerce</h4>
+                        <p>Scalable online platforms, payment processing, inventory management</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-hospital fa-3x text-primary mb-3"></i>
+                        <h4>Healthcare</h4>
+                        <p>HIPAA-compliant systems, patient management, medical device integration</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-university fa-3x text-primary mb-3"></i>
+                        <h4>FinTech</h4>
+                        <p>Financial analytics, trading platforms, compliance systems</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h4>Education</h4>
+                        <p>Learning management systems, student portals, assessment platforms</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                        <h4>Manufacturing</h4>
+                        <p>IoT integration, supply chain management, quality control systems</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-plane fa-3x text-primary mb-3"></i>
+                        <h4>Travel & Hospitality</h4>
+                        <p>Booking systems, customer management, loyalty programs</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-newspaper fa-3x text-primary mb-3"></i>
+                        <h4>Media & Entertainment</h4>
+                        <p>Content management, streaming platforms, user engagement systems</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                        <h4>Logistics</h4>
+                        <p>Fleet management, route optimization, tracking systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Showcase -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technologies We Master</h2>
+                <p class="section-subtitle">Cutting-edge technologies powering our successful projects</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-cloud text-primary"></i> Cloud Platforms
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>AWS (EC2, Lambda, RDS, S3, CloudFront)</li>
+                            <li>Microsoft Azure (VMs, Functions, SQL Database)</li>
+                            <li>Google Cloud Platform (Compute Engine, Cloud SQL)</li>
+                            <li>Multi-cloud strategies and migration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-cubes text-primary"></i> Architecture Patterns
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Microservices Architecture</li>
+                            <li>Event-Driven Architecture</li>
+                            <li>Domain-Driven Design (DDD)</li>
+                            <li>Clean Architecture & Hexagonal Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-tools text-primary"></i> DevOps & Tools
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Docker & Kubernetes</li>
+                            <li>GitHub Actions, Jenkins, GitLab CI,</li>
+                            <li>Terraform & Ansible</li>
+                            <li>Monitoring with Prometheus & Grafana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Testimonials from satisfied clients across various industries</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="service-icon mr-4" style="width: 60px; height: 60px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>John Smith</h4>
+                                <p class="text-primary">CTO, TechCorp Retail</p>
+                            </div>
+                        </div>
+                        <p>"ArchTech Solutions transformed our legacy e-commerce platform into a modern, scalable system. The performance improvements exceeded our expectations, and the team's expertise in microservices architecture was exceptional."</p>
+                        <div class="flex text-warning mt-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="service-icon mr-4" style="width: 60px; height: 60px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Dr. Sarah Johnson</h4>
+                                <p class="text-primary">Director, MedTech Solutions</p>
+                            </div>
+                        </div>
+                        <p>"The healthcare management system ArchTech built for us is HIPAA-compliant, secure, and incredibly user-friendly. Their attention to compliance requirements and security best practices was outstanding."</p>
+                        <div class="flex text-warning mt-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="service-icon mr-4" style="width: 60px; height: 60px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p class="text-primary">VP Engineering, FinTech Innovations</p>
+                            </div>
+                        </div>
+                        <p>"ArchTech's expertise in real-time data processing and financial analytics helped us build a platform that processes millions of transactions with sub-second response times. Highly recommended!"</p>
+                        <div class="flex text-warning mt-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Start Your Success Story?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; margin-bottom: 2rem;">Let's discuss how we can help you achieve similar results with your software architecture project.</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="contact.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-calendar"></i> Schedule Consultation
+                </a>
+                <a href="services.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">
+                    <i class="fas fa-cogs"></i> Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-cube"></i> ArchTech Solutions</h3>
+                    <p>Leading software architecture and system design consultancy specializing in scalable web applications and enterprise solutions.</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Software Architecture</a></li>
+                        <li><a href="services.html">System Design</a></li>
+                        <li><a href="services.html">SDLC Implementation</a></li>
+                        <li><a href="services.html">DevOps & CI/CD</a></li>
+                        <li><a href="services.html">Cloud Migration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@archtechsolutions.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArchTech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'var(--white)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -3,9 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArchTech Solutions - Software Architecture & System Design Experts</title>
+    <meta name="description" content="Leading software architecture and system design consultancy specializing in scalable web applications, microservices, and SDLC implementation.">
+    <meta name="keywords" content="software architecture, system design, web development, microservices, SDLC, DevOps, cloud solutions">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cube"></i> ArchTech Solutions
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Tomorrow's Software Architecture Today</h1>
+                <p>We design, architect, and implement scalable software solutions that power modern businesses. From microservices to cloud-native applications, we transform your ideas into robust, maintainable systems.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Explore Services
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-phone"></i> Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Expertise</h2>
+                <p class="section-subtitle">Comprehensive software architecture and system design services tailored to your business needs</p>
+            </div>
+            <div class="grid grid-cols-3">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3 class="service-title">Software Architecture</h3>
+                    <p class="service-description">Design scalable, maintainable software architectures using modern patterns and best practices. From monolithic to microservices, we create systems that grow with your business.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">System Design</h3>
+                    <p class="service-description">Comprehensive system design solutions including database architecture, API design, and integration patterns. We ensure your systems are robust, efficient, and future-ready.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="service-title">SDLC Implementation</h3>
+                    <p class="service-description">End-to-end Software Development Life Cycle implementation with agile methodologies, CI/CD pipelines, and DevOps practices for seamless delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ArchTech Solutions?</h2>
+                <p class="section-subtitle">We combine technical expertise with business acumen to deliver exceptional results</p>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-lightbulb text-primary"></i> Innovation-Driven Approach
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p>We stay ahead of technology trends and implement cutting-edge solutions that give your business a competitive advantage. Our architects are certified in the latest technologies and methodologies.</p>
+                        <ul>
+                            <li>Cloud-native architecture patterns</li>
+                            <li>Microservices and containerization</li>
+                            <li>Event-driven architecture</li>
+                            <li>AI/ML integration strategies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-shield-alt text-primary"></i> Enterprise-Grade Security
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Security is built into every layer of our architecture. We implement industry-standard security practices and compliance frameworks to protect your data and applications.</p>
+                        <ul>
+                            <li>Zero-trust security models</li>
+                            <li>Data encryption and privacy</li>
+                            <li>Compliance (GDPR, HIPAA, SOC2)</li>
+                            <li>Security auditing and monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-chart-line text-primary"></i> Scalable Solutions
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Our architectures are designed to scale seamlessly with your business growth. We implement auto-scaling, load balancing, and performance optimization strategies.</p>
+                        <ul>
+                            <li>Horizontal and vertical scaling</li>
+                            <li>Performance optimization</li>
+                            <li>Load balancing strategies</li>
+                            <li>Database sharding and replication</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-users text-primary"></i> Expert Team
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Our team consists of certified architects, senior developers, and DevOps engineers with decades of combined experience in enterprise software development.</p>
+                        <ul>
+                            <li>Certified AWS/Azure architects</li>
+                            <li>Kubernetes and Docker experts</li>
+                            <li>Agile and DevOps practitioners</li>
+                            <li>Industry thought leaders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">We work with the latest technologies and frameworks to build modern, efficient solutions</p>
+            </div>
+            <div class="grid grid-cols-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fab fa-aws fa-3x text-primary mb-3"></i>
+                        <h4>AWS Cloud</h4>
+                        <p>EC2, Lambda, RDS, S3, CloudFront</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fab fa-docker fa-3x text-primary mb-3"></i>
+                        <h4>Containerization</h4>
+                        <p>Docker, Kubernetes, EKS, AKS</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fab fa-node-js fa-3x text-primary mb-3"></i>
+                        <h4>Backend</h4>
+                        <p>Node.js, Python, Java, .NET Core</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fab fa-react fa-3x text-primary mb-3"></i>
+                        <h4>Frontend</h4>
+                        <p>React, Vue.js, Angular, Next.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Overview -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Development Process</h2>
+                <p class="section-subtitle">A proven methodology that ensures successful project delivery</p>
+            </div>
+            <div class="grid grid-cols-4">
+                <div class="text-center">
+                    <div class="service-icon mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h4>Discovery & Analysis</h4>
+                    <p>We analyze your requirements, existing systems, and business goals to create a comprehensive project plan.</p>
+                </div>
+                <div class="text-center">
+                    <div class="service-icon mx-auto mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h4>Architecture Design</h4>
+                    <p>Our architects design scalable, maintainable system architecture using industry best practices and patterns.</p>
+                </div>
+                <div class="text-center">
+                    <div class="service-icon mx-auto mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h4>Implementation</h4>
+                    <p>We implement the solution using agile methodologies, continuous integration, and automated testing.</p>
+                </div>
+                <div class="text-center">
+                    <div class="service-icon mx-auto mb-4">
+                        <span class="text-2xl font-bold">4</span>
+                    </div>
+                    <h4>Deployment & Support</h4>
+                    <p>We deploy your solution to production and provide ongoing support, monitoring, and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Transform Your Software Architecture?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; margin-bottom: 2rem;">Let's discuss how we can help you build scalable, maintainable software solutions that drive business growth.</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="contact.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-calendar"></i> Schedule Consultation
+                </a>
+                <a href="portfolio.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">
+                    <i class="fas fa-eye"></i> View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-cube"></i> ArchTech Solutions</h3>
+                    <p>Leading software architecture and system design consultancy specializing in scalable web applications and enterprise solutions.</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Software Architecture</a></li>
+                        <li><a href="services.html">System Design</a></li>
+                        <li><a href="services.html">SDLC Implementation</a></li>
+                        <li><a href="services.html">DevOps & CI/CD</a></li>
+                        <li><a href="services.html">Cloud Migration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@archtechsolutions.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArchTech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'var(--white)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
