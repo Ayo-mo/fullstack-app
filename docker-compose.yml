@@ -4,12 +4,15 @@ services:
   db:
     image: postgres:14
     container_name: postgres_db
+    restart: always
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     networks:
       - fullstack_net
 
@@ -37,8 +40,56 @@ services:
     networks:
       - fullstack_net
 
-volumes:
-  db_data:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports: 
+      - "9090"
+    depends_on:
+      - backend
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - fullstack_net
+  
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    enviropnment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes: 
+      - grafana_data:/var/lib/grafana
+    networks:
+      - fulstack_net
+      
+  node_exporter:
+    image: prom/node_exporter:latest
+    container_name: node-exporter
+    restart: always
+    ports: 
+      - "9100:9100"
+    networks: 
+      - app-network
+    deploy:
+      mode: global
+    volumes:
+      - /:/host:ro,rslave
+    
+
+
+  volumes:
+    db_data:
+    postgres_data:
+    grafana_data:
+    
 
 networks:
   fullstack_net:
+app-network:
+    driver: bridge
