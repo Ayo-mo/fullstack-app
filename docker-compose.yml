@@ -1,6 +1,6 @@
-version: '3.8'
-
 services:
+
+
   db:
     image: postgres:14
     container_name: postgres_db
@@ -66,6 +66,7 @@ services:
 
 volumes:
   db_data: {}
+   grafana_data: {} 
 
   
 
