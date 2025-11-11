@@ -65,12 +65,11 @@ services:
       - fullstack_net
 
 volumes:
-  db_data:
-  - db_data:/var/lib/postgresql/data
-  - ./prometheus.yml:/etc/prometheus/prometheus.yml
-  - grafana_data:/var/lib/grafana
+  db_data: {}
+
+  
 
 
 networks:
   fullstack_net:
-  - fullstack_net
+    driver: bridge
