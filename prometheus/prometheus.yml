@@ -8,4 +8,4 @@ scrape_configs:
 
   - job_name: "fullstack-app"
     static_configs:
-      - targets: ["web:5000"]  # Replace "web" with your app container name, port 5000 if Flask
+      - targets: ["fullstack-app:5000"]  # Replace "web" with your app container name, port 5000 if Flask
