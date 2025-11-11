@@ -1,6 +1,5 @@
 services:
 
-
   db:
     image: postgres:14
     container_name: postgres_db
@@ -41,7 +40,7 @@ services:
     image: prom/prometheus
     container_name: prometheus
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
     command:
       - "--config.file=/etc/prometheus/prometheus.yml"
     ports:
@@ -64,13 +63,16 @@ services:
     networks:
       - fullstack_net
 
+# -------------------
+# Volumes (root level)
+# -------------------
 volumes:
   db_data: {}
-   grafana_data: {} 
+  grafana_data: {}
 
-  
-
-
+# -------------------
+# Network (root level)
+# -------------------
 networks:
   fullstack_net:
     driver: bridge

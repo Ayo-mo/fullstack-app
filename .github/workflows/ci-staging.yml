@@ -10,9 +10,9 @@ jobs:
     environment: staging
 
     env:
-      POSTGRES_USER: ${{ secrets.STAGING_POSTGRES_USER }}
-      POSTGRES_PASSWORD: ${{ secrets.STAGING_POSTGRES_PASSWORD }}
-      POSTGRES_DB: ${{ secrets.STAGING_POSTGRES_DB }}
+      POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+      POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+      POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
 
     steps:
       - name: Checkout code
