@@ -37,8 +37,40 @@ services:
     networks:
       - fullstack_net
 
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    ports:
+      - "9090:9090"
+    networks:
+      - fullstack_net
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - fullstack_net
+
 volumes:
   db_data:
+  - db_data:/var/lib/postgresql/data
+  - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  - grafana_data:/var/lib/grafana
+
 
 networks:
   fullstack_net:
+  - fullstack_net
